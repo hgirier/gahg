@@ -1,0 +1,6 @@
+stages:
+ - build
+
+ buildtest:
+   script: cat text1.txt text2.txt | grep "This test passed"
+   stage: build
